@@ -235,6 +235,9 @@ shopify.metafield.create({
   - `get(themeId, params)`
   - `list(themeId[, params])`
   - `update(themeId, params)`
+- balance
+  - `list()`
+  - `transactions([params])`
 - blog
   - `count()`
   - `create(params)`
@@ -284,6 +287,8 @@ shopify.metafield.create({
   - `get(id[, params])`
   - `list([params])`
   - `update(id, params)`
+- currency
+  - `list()`
 - customCollection
   - `count([params])`
   - `create(params)`
@@ -293,7 +298,7 @@ shopify.metafield.create({
   - `update(id, params)`
 - customer
   - `accountActivationUrl(id)`
-  - `count()`
+  - `count([params])`
   - `create(params)`
   - `delete(id)`
   - `get(id[, params])`
@@ -325,6 +330,9 @@ shopify.metafield.create({
   - `list(priceRuleId)`
   - `lookup(params)`
   - `update(priceRuleId, id, params)`
+- dispute
+  - `get(id)`
+  - `list([params])`
 - draftOrder
   - `complete(id[, params])`
   - `count()`
@@ -367,6 +375,10 @@ shopify.metafield.create({
   - `list([params])`
   - `search(params)`
   - `update(id, params)`
+- [giftCardAdjustment](https://help.shopify.com/en/api/reference/plus/gift_card_adjustment)
+  - `create(giftCardId, params)`
+  - `get(giftCardId, id)`
+  - `list(giftCardId)`
 - inventoryItem
   - `get(id)`
   - `list(params)`
@@ -380,7 +392,7 @@ shopify.metafield.create({
 - location
   - `count`
   - `get(id)`
-  - `inventoryLevels(id)`
+  - `inventoryLevels(id[, params])`
   - `list()`
 - marketingEvent
   - `count()`
@@ -425,6 +437,9 @@ shopify.metafield.create({
   - `create(checkoutToken, params)`
   - `get(checkoutToken, id)`
   - `list(checkoutToken)`
+- payout
+  - `get(id)`
+  - `list([params])`
 - policy
   - `list([params])`
 - priceRule
@@ -472,6 +487,7 @@ shopify.metafield.create({
   - `delete(id)`
   - `get(id[, params])`
   - `list([params])`
+  - `customize(id, params)`
 - redirect
   - `count([params])`
   - `create(params)`
@@ -511,11 +527,14 @@ shopify.metafield.create({
   - `get(id[, params])`
   - `list([params])`
   - `order(id, params)`
+  - `products(id[, params])`
   - `update(id, params)`
 - storefrontAccessToken
   - `create(params)`
   - `delete(id)`
   - `list()`
+- tenderTransaction
+  - `list([params])`
 - theme
   - `create(params)`
   - `delete(id)`
